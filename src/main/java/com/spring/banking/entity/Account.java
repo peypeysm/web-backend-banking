@@ -20,8 +20,9 @@ import java.math.BigDecimal;
 public class Account {
 
     @Id
-    Integer id;
-    String accountName;
-    BigDecimal balance;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String accountName;
+    private BigDecimal balance;
 
 }

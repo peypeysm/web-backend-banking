@@ -4,5 +4,11 @@ package com.spring.banking.repository;
 //Use can change to use like this too
 //public class AccountRepository{}
 
-public interface AccountRepository {
+import com.spring.banking.entity.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AccountRepository
+        extends JpaRepository<Account, Integer> {
+
+
 }
